@@ -13,8 +13,9 @@ body {
     background-color: var(--color-border);
     background-image: url('/images/background.jpg');
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     top: 0;
     bottom: 0;
     left: 0;
@@ -25,15 +26,14 @@ body {
     position: absolute;
     text-align: center;
     align-items: center;
-    background-position: center;
-    background-size: cover;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 0 5em;
+    margin: 0 auto 20px;
+    width: 90%;
+    overflow: hidden;
 }
 
 #content-container {
@@ -84,27 +84,20 @@ h2 {
     font-size: 35px; 
 }
 
-a #social {
-    width: 40px;
-    float: right;
-    margin-right: 1em;
-}
-
-a:hover #social {
-    width: 50px;
-    margin-right: 0.7em;
-    margin-top: -5px;
-}
-
 .title {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-variant: small-caps;
     color: var(--color-title);
 }
 
+#social:hover {
+    transform: scale(1.2);
+}
+
 .title h1 {
     float: left;
-    margin-top: 0;
 }
 
 #top-content, .bio-more, #schedule, #musics {
@@ -113,10 +106,21 @@ a:hover #social {
     border-radius: 8px;
 }
 
+#top-content, #schedule, #musics{
+    text-align: left;
+    padding: 2rem;
+    width: 100%;
+}
+
+#top-content {
+    padding: 1rem 2rem;
+}
+
 #social {
     background: rgba(237, 201, 163, 0.55);
     border: 2px solid var(--color-border);
-    border-radius: 8px
+    border-radius: 8px;
+    width: 40px;
 }
 
 #content {
@@ -128,27 +132,21 @@ a:hover #social {
     justify-content: right;
 }
 
-#top-content, #schedule, #musics{
-    text-align: left;
-    padding: 2rem;
-    width: 100%;
-}
-
-#sidebar, .bio-more {
-    width: 20rem;
-    float: left;
+#sidebar {
+    width: 30%;
+    height: 100vh;
+    margin-top: 0;
     color: var(--color-text);
 }
 
-#sidebar {
-    height: 100vh;
-    margin-top: 0;
+.avatar {
+    padding: 1% 5%;
 }
 
 .bio-more img {
     background: rgba(f,f,f,1);
     margin: auto;
-    width: 220px;
+    width: 100%;
     margin-top: 4px;
     padding: 5px;
     opacity: 1;
@@ -161,6 +159,7 @@ a:hover #social {
 
 .bio-more div.infos p {
     margin-bottom: 1px;
+    font-size: 24px;
 }
 
 .bio-more div.infos h3 {

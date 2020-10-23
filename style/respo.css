@@ -1,0 +1,56 @@
+@media screen and (max-width: 870px) {
+  p, h2, h3, #schedule dl {
+    font-size: 24px;
+  }
+
+  .page-header a, h1 {
+    font-size: 1.6rem;
+  }
+
+  .bio-more div.infos p {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  p, h2, h3, #schedule dl {
+    font-size: 20px;
+  }
+
+  .page-header a, h1 {
+    font-size: 1.2rem;
+  }
+
+  .bio-more div.infos p {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  #social {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  p, h2, h3, #schedule dl {
+    font-size: 16px;
+  }
+
+  .page-header a, h1 {
+    font-size: .8rem;
+  }
+
+  .page-header {
+    height: 30px;
+  }
+
+  .bio-more div.infos p {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .bio-more {
+    padding: 2px;
+  }
+}
