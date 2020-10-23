@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/cadastro.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div id="container">
+        <header class="page-header">
+            <a href="index.html">Página Inicial</a>|
+            <a href="#">Cadastre-se</a>|
+            <a href="#">Galeria</a>
+        </header>
+
+        <div class="form-content">
+            <form action="#">
+                <div class="form-input">
+                <label for="email" required>E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="*(Ex: beethoven@email.com)">
+                </div>
+
+                <div class="form-input">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname" required minlength="2" maxlength="100" placeholder="*nome">
+                </div>
+                <div class="form-input">
+                <label for="lname">Sobrenome:</label>
+                <input type="text" id="lname" name="lname" required minlength="2" maxlength="100" placeholder="*sobrenome">
+                </div>
+
+                <div class="form-input">
+                <label for="pass">Senha:</label>
+                <input type="password" id="pass" name="password" required minlength="6" maxlength="14" placeholder="*Senha">
+                <p><small>(mínimo de 6 caracteres)</small></p>
+                <div>
+
+                <label class="label-msg" for="msg">
+                    <p>Vou adorar receber uma mensagem sua <span>&#10084</span></p>
+                    <textarea name="msg" id="msg" placeholder="Escreva aqui sua mensagem."></textarea>
+                </label>
+
+                <div class="form-input">
+                <label for="phoneNumber">Telefone:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required inputmode="numeric" maxlength="15" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4}" placeholder="*Ex: (12) 12345-6789">
+                <p><small>(DDD + número)</small></p>
+                </div>
+                
+                
+                <label class="check" for="promo">
+                    <input type="checkbox" id="promo" name="promo">
+                    <span class="label-text">Quero receber promoções e novidades por e-mail</span>
+                </label>
+                <label class="check" for="whats">
+                    <input type="checkbox" id="whats" name="whats">
+                    <span class="label-text">Quero receber informações pelo Whatsapp</span>
+                </label>
+
+                <input class="button" type="submit" value="Enviar">
+                <input class="button" type="reset" value="Limpar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
