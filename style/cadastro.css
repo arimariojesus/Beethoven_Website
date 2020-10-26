@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url('/images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-color: var(--color-border);
     background-attachment: fixed;
     background-repeat: no-repeat;
